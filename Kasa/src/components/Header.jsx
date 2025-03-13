@@ -9,9 +9,21 @@ export default function Header() {
             <img src="./src/assets/LOGO.png "/>
             </div>
           <nav className='nav-items'>
-            <div className='accueil'>Accueil</div>
+          <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? 'nav active' : 'nav')}
+              
+            >
+              Accueil
+            </NavLink>
+            <NavLink
+              to="/apropos"
+              className={({ isActive }) => (isActive ? 'nav active' : 'nav')}
+              
+            >
+              A propos
+            </NavLink>
             
-            <NavLink to="/apropos" className='propos'>Products</NavLink>
           </nav>
         </header>
 
