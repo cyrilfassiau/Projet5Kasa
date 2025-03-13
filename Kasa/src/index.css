@@ -21,6 +21,11 @@ header {
   margin: auto;
 }
 
+.propos {
+text-decoration: none;
+color: black;
+}
+
 .nav-items {
   display: flex;
   gap: 57px;
